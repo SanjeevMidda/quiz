@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.questionWrapper {
+  width: 400px;
+  height: 200px;
+  background: linear-gradient(grey, pink);
+  border-radius: 40px;
+}
+
+.answerWrapper {
+  border: 1px solid black;
+  width: 400px;
+  height: 100px;
+}
+
+button {
+  border: none;
+  background-color: rgb(231, 231, 231);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  /* font-weight: 600; */
+}
