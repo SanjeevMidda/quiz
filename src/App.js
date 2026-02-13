@@ -1,7 +1,7 @@
+import { useState } from "react";
 import "./index.css";
 
 function App() {
-  // create question and answers
   // track answers
   // show score at end
 
@@ -47,6 +47,9 @@ function App() {
       options: ["Córdoba", "Rosario", "Mendoza", "Buenos Aires"],
     },
   ];
+
+  const [answerSelected, setAnswerSelected] = useState("");
+
   //Create UI
   return (
     <div className="App">
