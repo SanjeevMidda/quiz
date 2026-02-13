@@ -56,15 +56,22 @@ function App() {
   ];
 
   const [answerSelected, setAnswerSelected] = useState("");
+  const [questionNumber, setQuestionNumber] = useState(0);
+
+  const nextQuestion = () => {
+    setQuestionNumber(questionNumber + 1);
+  };
 
   //Create UI
   return (
     <div className="App">
       <div className="mainWrapper">
-        <h1>Q.1</h1>
-        <div className="questionWrapper"></div>
+        <h1>Q.{questionNumber + 1}</h1>
+        <div className="questionWrapper">
+          {QUESTIONS[questionNumber].question}
+        </div>
         <div className="answerWrapper"></div>
-        <button>S</button>
+        <button onClick={nextQuestion}>S</button>
       </div>
     </div>
   );
